@@ -12,7 +12,6 @@ This repository demonstrates a complete CI/CD pipeline setup for a Python Flask 
 
 ## CI/CD Pipeline
 ### Triggers
-- **On push** to `main` → Deploy to **production**
 - **On push** to `staging` → Deploy to **staging**
 - **On release** creation → Deploy to **production**
 
@@ -90,11 +89,30 @@ sudo systemctl start flaskapp
 ---
 
 ## 📸 Screenshots (Add These)
+- Successful GitHub Actions run<br>
+  <img width="398" alt="image" src="https://github.com/user-attachments/assets/2281bb55-6d8f-4d2a-ab70-885b59035b44" /><br>
+  ![image](https://github.com/user-attachments/assets/ce563d02-7d51-409c-a24d-b599db5fb67a)<br>
 
-- Successful GitHub Actions run
-- Tests passing log
-- Deployment logs (from EC2)
-- Running Flask app in browser
+- Tests passing log<br>
+  <img width="578" alt="image" src="https://github.com/user-attachments/assets/6e7f2a02-db5e-47ec-b321-7526cb50765f" /><br>
+
+- Deployment logs (from EC2)<br>
+  PROD<br>
+  ![image](https://github.com/user-attachments/assets/2feb51e5-ede4-4e02-9f89-5d26322dd6b0)<br>
+  ![image](https://github.com/user-attachments/assets/e5a333d4-66ba-45f1-a0e1-ae83e5df4539)<br>
+  
+  STAGE<br>
+  ![image](https://github.com/user-attachments/assets/746ef014-afff-4f05-b554-7df9ce890c12)<br>
+  ![image](https://github.com/user-attachments/assets/8db13e4e-afdf-4fe2-90b3-112b7cd3dc4e)<br>
+
+- Running Flask app in browser<br>
+  PROD<br>
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/5e06e8ba-a17f-4387-95e0-72c6efb62668" /><br>
+  <img width="215" alt="image" src="https://github.com/user-attachments/assets/0f309be4-2f05-48ff-abae-b938871481c8" /><br>
+  
+  STAGE<br>
+  <img width="247" alt="image" src="https://github.com/user-attachments/assets/cbe50025-b48f-49d4-8430-938334ac93f9" /><br>
+  <img width="232" alt="image" src="https://github.com/user-attachments/assets/1cbb6e41-7869-4fa6-a7c8-205c7625ae85" /><br>
 
 ---
 

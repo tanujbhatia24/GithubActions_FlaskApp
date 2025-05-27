@@ -12,7 +12,6 @@ This repository demonstrates a complete CI/CD pipeline setup for a Python Flask 
 
 ## CI/CD Pipeline
 ### Triggers
-- **On push** to `main` → Deploy to **production**
 - **On push** to `staging` → Deploy to **staging**
 - **On release** creation → Deploy to **production**
 

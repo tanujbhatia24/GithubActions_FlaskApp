@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -41,14 +43,20 @@ jobs:
         if: github.ref == 'refs/heads/staging' || github.event_name == 'release'
         run: |
           HOST=""
+          BRANCH=""
           if [ "${{ github.ref }}" == "refs/heads/staging" ]; then
             HOST=${{ secrets.EC2_HOST_STAGING }}
+            BRANCH="staging"
           elif [ "${{ github.event_name }}" == "release" ]; then
             HOST=${{ secrets.EC2_HOST_PRODUCTION }}
+            BRANCH="main"
           fi
-          ssh -o StrictHostKeyChecking=no -i key.pem ${{ secrets.EC2_USER }}@$HOST << 'EOF'
+
+          ssh -o StrictHostKeyChecking=no -i key.pem ${{ secrets.EC2_USER }}@$HOST <<EOF
             cd GithubActions_FlaskApp
-            git pull origin $(if [ "${{ github.ref }}" == "refs/heads/staging" ]; then echo "staging"; else echo "main"; fi)
+            git fetch --all
+            git checkout $BRANCH
+            git pull origin $BRANCH
             echo "MONGO_URI=${{ secrets.MONGO_URI }}" > .env
             source venv/bin/activate
             pip install -r requirements.txt

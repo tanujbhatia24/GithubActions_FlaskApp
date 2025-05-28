@@ -114,6 +114,16 @@ sudo systemctl start flaskapp
   <img width="247" alt="image" src="https://github.com/user-attachments/assets/cbe50025-b48f-49d4-8430-938334ac93f9" /><br>
   <img width="232" alt="image" src="https://github.com/user-attachments/assets/1cbb6e41-7869-4fa6-a7c8-205c7625ae85" /><br>
 
+- Adding new users<br>
+  PROD<br>
+  <img width="567" alt="image" src="https://github.com/user-attachments/assets/b46b491e-93a7-4918-abd5-ea0d5336e219" /><br>
+  <img width="281" alt="image" src="https://github.com/user-attachments/assets/3be451dc-6d80-48ea-877f-f1294fa7b938" /><br>
+  <img width="421" alt="image" src="https://github.com/user-attachments/assets/690cb286-ba04-4c2b-9246-fdbe6e2a23f6" /><br>
+
+  STAGE<br>
+  <img width="591" alt="image" src="https://github.com/user-attachments/assets/b16a3433-cd80-4fe1-a69b-70e45a83df83" /><br>
+  <img width="234" alt="image" src="https://github.com/user-attachments/assets/28742c7f-5491-4fa2-b081-cf396284043c" /><br>
+  <img width="372" alt="image" src="https://github.com/user-attachments/assets/21d6f985-8053-439b-b523-66ac05691fba" /><br>
 ---
 
 ## 📌 Git Commands
